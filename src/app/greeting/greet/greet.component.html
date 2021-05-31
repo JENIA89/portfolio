@@ -1,1 +1,5 @@
-<p>greet works!</p>
+<div [@greet]="greetbox" *ngIf="visible" class="greet">
+  <video preload="true" autoplay="autoplay" loop muted >
+    <source src="./assets/video/greet.mp4" type="video/mp4" />
+  </video>
+</div>
