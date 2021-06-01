@@ -26,16 +26,15 @@ export class GreetComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-   
+    this.animate()
   }
 
   
 
-  // animate(){
-  //   setTimeout(()=>{
-  //     this.visible = !this.visible
-  //   },5000)
-    
-  // }
+  animate(){
+    setTimeout(()=>{
+      this.visible = !this.visible
+    },5000)
+  }
 
 }
