@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit} from '@angular/core';
+import { Component,  HostListener, OnInit, } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
@@ -23,8 +23,15 @@ export class GreetComponent implements OnInit {
   greetbox = 'start'
   visible = true
   video: HTMLVideoElement
+  videoPlayed: boolean = false
+  
   
   constructor() { }
+
+  @HostListener('window:beforeunload') onWindowBeforeUnLoad() {
+    this.video  = document.querySelector('video');
+    this.video.play();
+  }
 
   @HostListener('window:load') onWindowLoad(){
     this.initVideo()
@@ -35,17 +42,19 @@ export class GreetComponent implements OnInit {
   }
 
   initVideo() {
-    this.video  = document.querySelector('video');
+    this.video = document.querySelector('video');
     this.video.muted = true;
     this.video.autoplay = true;
     this.video.loop = true;
+    this.video.playsInline = true;
     this.video.preload = 'auto';
     this.video.addEventListener('canplay', () => {
       this.video.play();
+      this.videoPlayed = true
     });
     setTimeout(()=>{
       this.visible = !this.visible
-    },5000)
+    },4000)
   }
 
 }

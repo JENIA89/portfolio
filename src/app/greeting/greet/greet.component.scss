@@ -1,7 +1,9 @@
 .greet{
+    background: #000;
     width: 100%;
     min-height: 100vh;
     position: absolute;
+    z-index: 10;
     left: 0;
     top: 0;
 }
