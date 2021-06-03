@@ -4,18 +4,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GreetComponent } from './greeting/greet/greet.component';
+import { GreetModule } from './components/greet/greet.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GreetComponent
-    
+    AppComponent,  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    GreetModule
   ],
   providers: [],
   bootstrap: [AppComponent]
