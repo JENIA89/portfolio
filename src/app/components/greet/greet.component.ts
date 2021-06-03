@@ -12,7 +12,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         style({opacity: 1}),
         animate(800, style({
           opacity: 0,
-          transform: 'scale(1.2)'
+          transform: 'scale(1.3)'
         }))
       ])
     ])
