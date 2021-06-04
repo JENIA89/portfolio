@@ -8,73 +8,73 @@ import { Container, Main } from 'tsparticles';
 })
 export class AboutComponent implements OnInit {
 
-  id: string = "tsparticles";
+  // id: string = "tsparticles";
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  particlesOptions = {
+//   particlesOptions = {
     
-    background: {
-      color: "#000"
-    },
-    detectRetina: false,
-    fpsLimit: 30,
-    interactivity: {
-      detectsOn: "canvas",
-      events: {
-        resize: true
-      }
-    },
-    particles: {
-      color: {
-        value: "#fff"
-      },
-      number: {
-        density: {
-          enable: true,
-          area: 500
-        },
-        limit: 0,
-        value: 400
-      },
-      opacity: {
-        animation: {
-          enable: true,
-          minimumValue: 0.05,
-          speed: 2,
-          sync: false
-        },
-        random: {
-          enable: true,
-          minimumValue: 0.5
-        },
-        value: 1
-      },
-      shape: {
-        type: "circle"
-      },
-      size: {
-        random: {
-          enable: true,
-          minimumValue: 0.5
-        },
-        value: 1
-      }
-    }
-  }
+//     background: {
+//       color: "#000"
+//     },
+//     detectRetina: false,
+//     fpsLimit: 30,
+//     interactivity: {
+//       detectsOn: "canvas",
+//       events: {
+//         resize: true
+//       }
+//     },
+//     particles: {
+//       color: {
+//         value: "#fff"
+//       },
+//       number: {
+//         density: {
+//           enable: true,
+//           area: 500
+//         },
+//         limit: 0,
+//         value: 400
+//       },
+//       opacity: {
+//         animation: {
+//           enable: true,
+//           minimumValue: 0.05,
+//           speed: 2,
+//           sync: false
+//         },
+//         random: {
+//           enable: true,
+//           minimumValue: 0.5
+//         },
+//         value: 1
+//       },
+//       shape: {
+//         type: "circle"
+//       },
+//       size: {
+//         random: {
+//           enable: true,
+//           minimumValue: 0.5
+//         },
+//         value: 1
+//       }
+//     }
+//   }
 
 
 
-particlesLoaded(container: Container ): void {
-  console.log(container);
-}
+// particlesLoaded(container: Container ): void {
+//   console.log(container);
+// }
 
-particlesInit(main: Main): void {
-  console.log(main);
+// particlesInit(main: Main): void {
+//   console.log(main);
   
-}
+// }
 
 }
