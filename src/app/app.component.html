@@ -9,9 +9,15 @@
       </ul>
     </nav>
   </div>
+  <!-- <ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    (particlesLoaded)="particlesLoaded($event)"
+    (particlesInit)="particlesInit($event)"
+  ></ng-particles> -->
+  <Particles id="tsparticles" [options]="particlesOptions"></Particles>
+  <h1>Main</h1>
 
-  <div class="container">
-    <app-greet></app-greet>
-    <router-outlet></router-outlet>
-  </div>
+  <app-greet></app-greet>
+  <router-outlet></router-outlet>
 </div>

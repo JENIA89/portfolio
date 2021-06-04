@@ -1,9 +1,13 @@
 .home{
-    position: relative;
-    z-index: 1;
-    background: #000;
+    background: black;
     height: 100vh;
     width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .header{
@@ -30,3 +34,9 @@
         padding: 10px 0;
     }
 }
+
+::ng-deep .tsparticles-canvas-el{
+    height: 100vh !important;
+  
+}
+

@@ -1,3 +1,35 @@
 <div class="about">
-  <h1>About me</h1>
+  <!-- <ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    (particlesLoaded)="particlesLoaded($event)"
+    (particlesInit)="particlesInit($event)"
+  ></ng-particles> -->
+  <Particles id="tsparticles" [options]="particlesOptions"></Particles>
+
+  <div class="about-container">
+    <div
+      class="
+        about-content
+        animate__animated animate__backInLeft animate__delay-0.5s
+      "
+      data-wow-offset="200"
+    >
+      <h1>Hello and Welcome</h1>
+      <p>
+        Hey! My name is Evgene and I am the developer you are looking for! My
+        knowledge is as strong as your morning coffee! My stack: JavaScript /
+        React / Angular. If you are looking for a cool and motivated developer,
+        then dial my number
+      </p>
+    </div>
+    <div
+      class="
+        about-photo
+        animate__animated animate__backInRight animate__delay-0.5s
+      "
+    >
+      <img src="../../../assets/img/about.jpg" />
+    </div>
+  </div>
 </div>
