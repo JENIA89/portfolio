@@ -35,11 +35,20 @@
 }
 
 .about-photo{
-    
+    overflow:hidden;
     img{
         width: 300px;
         border: 3px solid #fff;
         border-radius: 16px;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+    }
+
+    img:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
     }
 }
 
